@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  display:flex;
+  flex-direction:column;
+  background:#efefee;
+  align-items:center;
+  justify-content:space-between;
+  height:100vh;
+  width:100%;
+  color: rgba(20, 19, 19, 0.808);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.topAppBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #efefee;
+  border-bottom: 1px solid #ccc;
+  padding:16px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.pageControl{
+  background-color: #efefee;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight:bold;
+  &:hover{
+    background-color: #ccc;
+  }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:8px;
+  background-color: #efefee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight:bold;
+  .pageNum{
+    text-transform: capitalize;
+    padding:8px;
+    border-radius: 5px;
+    &:hover{
+      background-color: #ccc;
+    }
+  }
+}
